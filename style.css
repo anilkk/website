@@ -1,17 +1,12 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-
 <style>
 body {
-  background-color: cornsilk;
+  background-color: ivory;
         font-family: 'Sriracha', cursive;
 
         font-size: 16px;
         font-weight: 300;
         line-height: 1.6;
-        color: #000000;
+        color: #FFFFF0;
     }
     h1, h2, h3, h4 {
   line-height: 1.4;
@@ -34,5 +29,42 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+a:visited { /* visited link */
+  color: #B22222;
+}
+a:hover,
+a:focus {
+  color: #B22222;
+  text-decoration: underline; /* Underlining when hovering over a link */
+  }
 
+  <a href="file:///C:/Users/Iulia/Desktop/Project%20folder/index.html.html" class="button">Read more </a>
+  .button:active {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: 	FireBrick;
+  color: #FFFAFA; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+<a href="mailto:popiuliacristina@gmail.com" class="button contact">Email me</a>
+.button.contact {
+  background-color: transparent;
+  color: #FFFAFA;
+  text-transform: uppercase;
+  border: 2px solid #FFFAFA;
+}
+.button.contact:hover {
+  background-color: #FFFAFA;
+  color: #ffffff;
+}
+img {
+  width: 100%;
+}
 </style>
