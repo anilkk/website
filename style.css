@@ -24,7 +24,7 @@ body {
   background-color: ivory;
         font-family: 'Sriracha', cursive;
 
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 1.6;
         color: #FFFFF0;
@@ -46,6 +46,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+#about-page h3 { margin-top: 0;}
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -85,21 +86,12 @@ nav > ul > li > a:active {
   background-color: #FFFAFA;
   color: #ffffff;
 }
-img {
-  width: 100%;
-}
+img {width 100%, max-width 100%, height: auto}
 .logo {
   max-width: 250px;
   text-align: center;
 }
-.header {
-  background-color: #ffe4c4;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  display: inline-block;
-  width: 100%;
-}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -118,8 +110,112 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
+#hero span {
+  display: block;
+}
+
   main {
   padding-top: 133px;
 }
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px and larger) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10 px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.skills{
+  width: 60%;
+  float: left;
+}
+.tools{
+  width: 40%;
+  float: left;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  display: inline-block;
+  background-color: #B22222;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #B22222;
+  transition-duration: 0.2s;
+  transition-property: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.rocket {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes color-change {
+  from {fill: #ffff00;}
+  to {fill: #32cd32;}
+}
+.man-move {
+  animation: 30s man-move infinite alternate linear;
+}
+@keyframes man-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+
+.woman-move {animation: 34s woman-move infinite alternate linear;}
+
+@keyframes woman-move {
+    from {transform: translate(200px,50px);}
+    to {transform: translate(0,50px);}
+
+    .man-move-reverse {
+      from {transform: translate(446px,48px);}
+      to {transform: translate(100px, 48px);}
+    }
+@keyframes man-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.woman-move-reverse {animation: 34s woman-move-reverse infinite alternate linear;
+}
+@keyframes woman-move-reverse {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+
 </style>
