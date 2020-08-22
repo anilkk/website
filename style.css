@@ -87,6 +87,7 @@ nav > ul > li > a:active {
   color: #ffffff;
 }
 img {width 100%, max-width 100%, height: auto}
+
 .logo {
   max-width: 250px;
   text-align: center;
@@ -95,6 +96,7 @@ img {width 100%, max-width 100%, height: auto}
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -117,21 +119,27 @@ nav > ul > li > a {
 }
 
   main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px and larger) {
+
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 4px;
+    min-width: 641px;
   }
   nav {
     width: auto;
     float: right
     margin-top: 4px;
   }
+}
+nav > ul {
+  margin: 1em 0;
+  min-width: 641px;
 }
 
 /* ==============================
@@ -217,5 +225,30 @@ X-large devices (1440px or larger)
 @keyframes woman-move-reverse {
     from {transform: translate(0,50px);}
     to {transform: translate(200px,50px);}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 </style>
