@@ -1,0 +1,258 @@
+#Home {
+  background-color: ivory;
+  color: #B22222;
+  font-family: 'Roboto Slab', cursive;
+}
+
+#About me {
+  background-color: ivory;
+  color: #B22222;
+  font-family: 'Roboto Slab', cursive;
+}
+
+#Work {
+  background-color: ivory;
+  color: #B22222;
+  font-family: 'Roboto Slab', cursive;
+}
+
+#Contact {
+  background-color: ivory;
+  color: #B22222;
+  font-family: 'Roboto Slab', cursive;
+}
+
+body {
+  background-color: ivory;
+  font-family: 'Sriracha', cursive;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #242423;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+nav>ul>li>a:visited {
+  /* visited link */
+  color: #B22222;
+}
+
+nav>ul>li>a:hover,
+a:focus {
+  color: #B22222;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: FireBrick;
+  color: #FFFAFA;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #FFFAFA;
+  text-transform: uppercase;
+  border: 2px solid #FFFAFA;
+}
+
+.button.contact:hover {
+  background-color: #FFFAFA;
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  max-width: 150px;
+  text-align: center;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #B22222;
+}
+
+#hero {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+main {
+  padding-top: 56px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10 px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.skills {
+  width: 60%;
+  float: left;
+}
+
+.tools {
+  width: 40%;
+  float: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #B22222;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #B22222;
+  transition-duration: 0.2s;
+  transition-property: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.demo-css-animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example 2s infinite;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
+}
+
+nav {
+  display: flex;
+}
+
+nav>ul {
+  list-style: none;
+  display: flex;
+}
+
+nav>ul>li {
+  padding: 5px;
+}
+
+.navtoggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-menu-icon {
+  display: none;
+}
+
+/*  for smaller than 641px */
+@media only screen and (max-width: 640px) {
+  .hamburger-menu-icon {
+    display: block;
+  }
+
+  nav>ul {
+    display: none;
+  }
+
+  .menu-visible {
+    display: flex;
+    flex-direction: column;
+  }
+}
